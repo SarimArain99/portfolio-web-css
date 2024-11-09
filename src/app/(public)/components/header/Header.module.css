@@ -1,0 +1,275 @@
+.header {
+  height: 6rem;
+  border-bottom: 1px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #f4f4f4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+  font-size: 1.8rem; /* text-3xl */
+  font-weight: bold; /* font-bold */
+  color: #202426;
+  text-decoration: none;
+  margin-left: 3rem;
+}
+
+@media (min-width: 640px) {
+  .heading {
+    font-size: 2.8rem;
+  }
+}
+
+.dot {
+  color: #ff5a13;
+}
+
+.container {
+  gap: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+  }
+}
+
+.link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+.link.active {
+  border-bottom: 1px solid black;
+}
+
+.link:hover span {
+  width: 100%;
+}
+
+.link span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.socialSvg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.socials {
+  margin-left: 4rem;
+  gap: 0.75rem;
+  align-items: center;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .socials {
+    display: flex;
+  }
+}
+
+.contactForm {
+  position: relative; /* relative */
+  display: inline-block; /* inline-block */
+  width: 12rem; /* w-48 */
+  text-align: center; /* text-center */
+  padding: 0.5rem 0;
+  padding-top: 10px;
+  font-weight: bold; /* font-bold */
+  color: white; /* text-white */
+  background-color: black; /* bg-black */
+  border: 2px solid black; /* border-2 border-black */
+  height: 1.5rem; /* h-12 */
+  overflow: hidden; /* overflow-hidden */
+  border-radius: 1.5rem; /* rounded-3xl */
+  text-decoration: none;
+  margin-right: 3rem;
+}
+
+/* Optional group hover effect (if required) */
+.contactForm:hover {
+  background: black;
+}
+
+.letsWork {
+  position: relative; /* relative */
+  z-index: 10; /* z-10 */
+  transition: color 0.3s; /* transition-colors duration-300 */
+}
+
+.group:hover .letsWork {
+  color: black; /* group-hover:text-black */
+}
+
+.connectWork {
+  position: absolute; /* absolute */
+  inset: 0; /* inset-0 */
+  background-color: white; /* bg-white */
+  color: black; /* text-black */
+  transition: transform 0.3s; /* transition-all duration-300 */
+  transform: scaleY(0); /* scale-y-0 */
+  transform-origin: bottom; /* origin-bottom */
+}
+
+.group:hover .connectWork {
+  transform: scaleY(1);
+}
+
+.hamButton {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  margin-right: 10px;
+}
+
+.hamContainer {
+  width: 30px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.barTop,
+.barMiddle,
+.barBottom {
+  width: 100%;
+  height: 2px;
+  background-color: #202426;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+.barTop,
+.barBottom {
+  transform-origin: left;
+}
+
+.buttonOpen .barTop {
+  transform: rotate(45deg)translateY(-1px)
+}
+
+.buttonOpen .barMiddle {
+  opacity: 0; 
+}
+
+.buttonOpen .barBottom {
+  transform: rotate(-45deg)
+}
+
+@media (min-width: 1024px) {
+  .hamContainer {
+    display: none;
+  }
+}
+
+.hamMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 6rem;
+  width: 100%;
+  background-color: #fefefe;
+  border-top: 1px solid #d1d5db;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+  min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+  .hamMenu {
+    display: none;
+  }
+}
+
+.hamOuterSocials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hamSocials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.hamSocialSvg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.hamContactButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 14rem; /* w-48 */
+  text-align: center;
+  padding: 0.8rem;
+  font-weight: bold; /* font-bold */
+  color: white; /* text-white */
+  background-color: black; /* bg-black */
+  border: 2px solid black; /* border-2 border-black */
+  height: 1.5rem; /* h-12 */
+  overflow: hidden; /* overflow-hidden */
+  border-radius: 1.8rem; /* rounded-3xl */
+  text-decoration: none;
+}
+
+/* Optional group hover effect (if required) */
+.hamContactButton:hover {
+  background: black;
+}
+
+.hamLetsWork {
+  position: relative; /* relative */
+  z-index: 10; /* z-10 */
+  transition: color 0.3s;
+}
+
+.group:hover .hamLetsWork {
+  color: black; /* group-hover:text-black */
+}
+
+.hamConnectWork {
+  position: absolute; /* absolute */
+  inset: 0; /* inset-0 */
+  background-color: white; /* bg-white */
+  color: black; /* text-black */
+  transition: transform 0.3s; /* transition-all duration-300 */
+  transform: scaleY(0); /* scale-y-0 */
+  transform-origin: bottom; /* origin-bottom */
+}

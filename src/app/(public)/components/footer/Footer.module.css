@@ -1,0 +1,37 @@
+.footerContainer {
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem;
+}
+
+.separator {
+    height: 1px;
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    background-color: black;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .separator {
+        margin-top: 1.25rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+.footerText {
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    color: #757575;
+    font-size: 0.875rem;
+    cursor: default;
+    margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+    .footerText {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}

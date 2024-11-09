@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.imageWrapper {
+  margin-top: 3rem;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  margin-top: 3rem;
+  max-width: 1400px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .image {
+    width: 90%;
+  }
+}
+.content {
+  padding: 1.5rem;
+}
+@media (min-width: 1280px) {
+  .content {
+    padding: 3rem;
+  }
+}
+.title {
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+  text-align: center;
+  color: #2d3748;
+  letter-spacing: 0.05em;
+}
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+.description {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  color: #4a5568;
+  line-height: 1.75;
+}
+.sectionList {
+  margin-top: 1.5rem;
+}
+.section {
+  margin-bottom: 1.5rem;
+}
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #2d3748;
+}
+.sectionDescription {
+  color: #718096;
+  line-height: 1.75;
+}
+.footer {
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  color: #2d3748;
+  line-height: 1.75;
+}
+.exploreLink {
+  margin-top: 1.5rem;
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+  color: #3182ce;
+  font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+.exploreLink:hover {
+  color: #2c5282;
+}

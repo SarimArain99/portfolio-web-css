@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imageWrapper {
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  margin-top: 6rem;
+  max-width: 1400px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .image {
+    width: 90%;
+  }
+}
+.content {
+  padding: 1rem 1.5rem;
+}
+.title {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #2d3748;
+}
+@media (min-width: 640px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+.description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #4a5568;
+  line-height: 1.625;
+}
+@media (min-width: 640px) {
+  .description {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.25rem;
+  }
+}
+.sectionList {
+  margin-top: 1.5rem;
+}
+.section {
+  margin-bottom: 1.5rem;
+}
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #2d3748;
+}
+@media (min-width: 640px) {
+  .sectionTitle {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  .sectionTitle {
+    font-size: 2.25rem;
+  }
+}
+.sectionDescription {
+  color: #718096;
+  line-height: 1.625;
+}
+.featuresList {
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #718096;
+  line-height: 1.625;
+}
+.featureItem {
+  margin-top: 0.75rem;
+}
+.footer {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #2d3748;
+  line-height: 1.625;
+}
+@media (min-width: 640px) {
+  .footer {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    font-size: 1.25rem;
+  }
+}
+.exploreLink {
+  margin-top: 1.5rem;
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+  color: #3182ce;
+  font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+.exploreLink:hover {
+  color: #2c5282;
+}

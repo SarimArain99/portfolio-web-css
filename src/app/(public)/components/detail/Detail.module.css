@@ -1,0 +1,51 @@
+.container {
+  padding-top: 7rem;
+  padding-bottom:10rem;
+  cursor: default;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-top: 10rem;
+  }
+}
+
+.title {
+  font-size: 9vw;
+  text-align: center;
+  font-weight: bold;
+  color: #202426;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 7vw;
+  }
+}
+
+.highlight {
+  color: #ff5a13;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  color: #000000;
+  font-weight: 300;
+  max-width: 48rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  text-align:justify ;
+}
+
+.dark .description {
+  color: #1a202c;
+}
+
+.scrollText {
+  text-align: center;
+  color: #a0aec9;
+  margin-top: 2rem;
+}
